@@ -34,3 +34,16 @@ services:
       - ./docker/db/sql:/docker-entrypoint-initdb.d
     ports:
       - 3306:3306
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpMyAdmin
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=db
+    links:
+      - db
+    ports:
+      - 8001:80
+    volumes:
+      - /sessions
