@@ -12,9 +12,10 @@ class TaskController extends Controller
         // $tasks = Task::orderBy('created_at', 'asc')->get();
         $tasks = Task::all();
         // dd($tasks);
-        return view('tasks', [
-            'tasks' => $tasks
-        ]);
+        return view('tasks', compact('tasks'));
+        // return view('tasks', [
+        //     'tasks' => $tasks
+        // ]);
     }
 
     public function store(Request $request)

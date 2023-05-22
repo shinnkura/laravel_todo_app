@@ -13,7 +13,7 @@
         </form>
 
         <h2>Current Tasks</h2>
-
+       
         <ul>
             @foreach ($tasks as $task)
                 <li>
