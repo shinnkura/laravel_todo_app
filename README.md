@@ -14,6 +14,6 @@
 
 7 `ブラウザでwelcomeページ表示 -> localhost:8000`
 
-##　　vender ファイルを編集した際にするコマンド
+##　vender ファイルを編集した際にするコマンド
 
 `php artisan migrate:fresh`
