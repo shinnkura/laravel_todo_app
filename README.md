@@ -16,6 +16,5 @@
 
 
 ## vender ファイルを編集した際にするコマンド
-##　
 
 `php artisan migrate:fresh`
